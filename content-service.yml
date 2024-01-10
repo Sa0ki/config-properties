@@ -2,8 +2,6 @@ spring:
   main:
     allow-bean-definition-overriding: true
   graphql:
-    graphiql:
-      enabled: true
     cors:
       allowed-origins: "http://localhost:4200"
       allowed-origin-patterns: "*"
@@ -12,8 +10,6 @@ spring:
       exposed-headers: "*"
       allow-credentials: true
       max-age: 1800s
-server:
-  port: 8081
 eureka:
   client.service-url:
     defaultZone: ${DISCOVERY_SERVICE_URL:http://localhost:8761/eureka}
